@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginRegister.ChangePersonNameController">
+   <children>
+      <TextField fx:id="newNameInput" layoutX="227.0" layoutY="134.0" />
+      <Text layoutX="256.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert new name:" />
+      <Button layoutX="274.0" layoutY="253.0" mnemonicParsing="false" onAction="#changeName" text="Submit" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+           <menus>
+          <Menu mnemonicParsing="false" text="System">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Account">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Change name" />
+                  <MenuItem mnemonicParsing="false" onAction="#changePassowrd" text="Change password" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Projects">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#projects" text="Open Projects" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fx:id="text" fill="#00ff15" layoutX="203.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your details was successfully changed" visible="false" />
+      <Text layoutX="248.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert new surname:" />
+      <TextField fx:id="newSurnnameInput" layoutX="227.0" layoutY="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginRegister.MainProgramController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="3.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="System">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                  <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Account">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#changeName" text="Change name" />
+                  <MenuItem mnemonicParsing="false" onAction="#changePassowrd" text="Change password" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Projects">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Open Projects" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your projects:" textAlignment="CENTER" wrappingWidth="202.00000293552876">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Accordion fx:id="ac" layoutY="75.0" prefHeight="324.0" prefWidth="202.0" />
+      <PieChart fx:id="piechart" layoutX="303.0" layoutY="76.0" prefHeight="324.0" prefWidth="297.0" />
+      <Text layoutX="339.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projects statistics:" textAlignment="CENTER" wrappingWidth="202.00000293552876">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
